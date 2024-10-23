@@ -1,11 +1,13 @@
-import java.util.Scanner;
-
 public class PrettyHeader {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         prettyHeader("This is my message");
     }
 
+    /**
+     * Receives a String of a variable length from the programmer and formats a consistent-length header around this text
+     *
+     * @param msg the String value input by the programmer
+     */
     public static void prettyHeader(String msg)
     {
         int msgLength = 0;
