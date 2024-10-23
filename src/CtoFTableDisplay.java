@@ -16,6 +16,7 @@ public class CtoFTableDisplay
         }
     }
 
+
     /**
      * Receives a double value in Celsius and converts it to a double value in Fahrenheit
      *
