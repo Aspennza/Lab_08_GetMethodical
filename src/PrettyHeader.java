@@ -3,18 +3,20 @@ import java.util.Scanner;
 public class PrettyHeader {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        prettyHeader("This is my message!");
+        prettyHeader("This is my message");
     }
 
     public static void prettyHeader(String msg)
     {
-        int msgLength = msg.length();
+        int msgLength = 0;
         int totalLength = 54;
         int lengthSubtracted = 0;
         double initialPaddingLength = 0.0;
         double roundedPaddingLength = 0.0;
         int paddingLength1 = 0;
         int paddingLength2 = 0;
+
+        msgLength = msg.length();
 
         for(int row = 1; row <= 3; row++)
         {
@@ -24,7 +26,6 @@ public class PrettyHeader {
                 }
             }else {
                 System.out.print("***");
-                //do the subtraction problem divided by two then input that for the column number??
                 lengthSubtracted = totalLength - msgLength;
 
                 if(lengthSubtracted % 2 == 0) {
